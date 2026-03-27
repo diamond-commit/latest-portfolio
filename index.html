@@ -183,7 +183,7 @@
         </a>
 
            <!--Contact-->
-            <p>Contact here</p>
+            <p class="text-white ">Contact here</p>
       <div id="contact"  class="flex gap-1 scroll-mt-24">
       <a href="https://x.com/yingyang0100" target="_blank"><button class="p-1  hover:scale-110 transition-all duration-200 transform  bg-zinc-800">
 <svg class="w-6 h-6 md:h-6 md:w-6" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
@@ -363,17 +363,33 @@
     </div>
 
     <!-- Project Grid -->
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-3 gap-6">
   
 
        <a href="https://anonymous.pxxl.click" target="_blank">
-      <div style="background-image: url('images/anony.jpeg') ;" class=" h-56 md:h-64  bg-cover project-card opacity-0 translate-y-8 relative group border border-zinc-800 rounded-2xl p-6  backdrop-blur-sm transition duration-700">
-        <div class="inset-0 absolute bg-black/50"></div>
-        <div class=" cursor-pointer absolute bottom-4 left-4 md:bottom-8 md:left-8 rounded-sm  text-black px-5 py-1 bg-white">ANONYMOUS</div>
-       </div>
-       </a>
-     
-       </div>
+      <div style="background-image: url('images/anony.jpeg');"
+class="h-56 md:h-64 bg-cover bg-center project-card opacity-0 translate-y-8 relative group border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm transition duration-700 overflow-hidden">
+
+  <!-- Dark overlay -->
+  <div class="inset-0 absolute bg-black/50"></div>
+
+  <!-- Tech stack chips -->
+  <div class="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+    <span class="text-xs px-3 py-1 bg-white/10 backdrop-blur-md text-white rounded-full border border-white/20">PHP</span>
+    <span class="text-xs px-3 py-1 bg-white/10 backdrop-blur-md text-white rounded-full border border-white/20">PostgreSQL</span>
+    <span class="text-xs px-3 py-1 bg-white/10 backdrop-blur-md text-white rounded-full border border-white/20">Tailwind</span>
+    <span class="text-xs px-3 py-1 bg-white/10 backdrop-blur-md text-white rounded-full border border-white/20">JavaScript</span>
+  </div>
+
+  <!-- Project name -->
+  <div class="cursor-pointer absolute bottom-4 left-4 md:bottom-8 md:left-8 rounded-sm text-black px-5 py-1 bg-white z-10">
+    ANONYMOUS
+  </div>
+
+</div>
+ </a>
+ </div>
+  
       </section>
 
      <footer class="bg-zinc-900 text-zinc-400 py-8">
